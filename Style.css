@@ -1,0 +1,69 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.motobug {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    animation-duration: 2s;
+    animation-name: moto-animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moto-animation{
+    
+    from{
+        right:-80px;
+    }
+    
+    to{
+        right: 100%;
+    }
+}
+
+.sonic{
+    height:75px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.jump{
+    animation-name: jump;
+    animation-duration: 600ms;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    
+    40%{
+        bottom: 180px;
+    }
+    
+    50%{
+        bottom: 180px;
+    }
+    
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
